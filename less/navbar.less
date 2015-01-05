@@ -1,0 +1,188 @@
+.navbar, .navbar-inverse {
+    border-bottom: 3px solid @gray-darker;
+    .navbar-brand {
+        font-size: 20px;
+        height: 40px;
+        color: @brand-primary;
+    }
+    .divider-vertical {
+        height: 41px;
+        border: transparent;
+        .vertical-rule-dark;
+    }
+    .nav {
+        & > li {
+            & > a {
+                font-size: 14px;
+                padding: 15px;
+            }
+            & > a:hover {
+                color: @brand-primary;
+                margin-bottom: -3px;
+                border-bottom: 3px solid @brand-primary;
+            }
+            &.active {
+                & > a, > a:hover {
+                    background-color: transparent;
+                }
+            }
+        }
+        & > li.dropdown.active {
+            & > .dropdown-toggle {
+                color: @brand-primary;
+            }
+        }
+    }
+}
+.navbar-inverse {
+    border-bottom: 3px solid lighten(@brand-primary, 12.5%);
+}
+.nav {
+    & > .open {
+        &.active > a:hover {
+            background-color: rgba(0, 0, 0, 0.25);
+            border-color:     transparent transparent #666 transparent;
+        }
+        & > a {
+            .linear-gradient-top(@brand-primary, @brand-primary, 0, lighten(@brand-primary, 10%), 100) !important;
+        }
+    }
+    li {
+        & + .nav-header {
+            margin-top: 0;
+        }
+    }
+}
+.navbar .nav > .active > a,
+.navbar .nav > .active > a:hover,
+.navbar .nav > .active > a:focus {
+    color: @brand-primary;
+    margin-bottom: -3px;
+    border-bottom: 3px solid @darkPrimary;
+}
+.navbar-nav.navbar-right:last-child {
+    margin-right: 10px;
+}
+.dropdown-menu {
+    .inset-panel-dark;
+    background-color: darken(#2f2f2f, 6);
+    & > li {
+        &.disabled, &.dropdown-header {
+            color: @brand-primary;
+            & > a {
+                color: #656d6d;
+            }
+        }
+        &.divider {
+            background-color: @gray-darker;
+        }
+        & > a:hover {
+            .linear-gradient-top(@brand-primary, @brand-primary, 0, lighten(@brand-primary, 10%), 100);
+        }
+        & > a {
+            color: #ffffff;
+        }
+    }
+    & > .active {
+        & > a {
+            color: @navbar-default-link-active-color;
+            background-color: @navbar-default-link-active-bg;
+        }
+    }
+}
+.sub-nav {
+    margin-bottom: 10px;
+    margin-left: 0;
+    list-style: none;
+    & > li {
+        & > a {
+            display: block;
+            & > img {
+                max-width: none;
+            }
+        }
+    }
+    & > .pull-right {
+        float: right;
+    }
+}
+.sub-nav > li > a:hover,
+.sub-nav > li > a:focus {
+    text-decoration: none;
+    background-color: #eeeeee;
+}
+.sub-navbar {
+    *position: relative;
+    *z-index: 2;
+    margin-bottom: 20px;
+    margin-top: -20px;
+    overflow: visible;
+    .container {
+        width: auto;
+    }
+    .sub-nav {
+        position: relative;
+        left: 0;
+        display: block;
+        float: left;
+        margin: 0 10px 0 0;
+        &.pull-right {
+            float: right;
+            margin-right: 0;
+        }
+        & > li {
+            float: left;
+            & > a {
+                float: none;
+                padding: 5px 10px 5px;
+                color: #c6c6c6;
+                text-decoration: none;
+                .text-shadow(0 1px 0 #444444);
+            }
+        }
+        .dropdown-toggle {
+            .caret {
+                margin-top: 8px;
+            }
+        }
+    }
+}
+.sub-navbar-inner {
+    min-height: 20px;
+    padding-right: 20px;
+    padding-left: 20px;
+    .gradient(#363636, #444444, #222222);
+    border: 1px solid #030303;
+    background-repeat: repeat-x;
+    *zoom: 1;
+    .box-shadow(0 1px 4px rgba(0, 0, 0, 0.065));
+    &:after {
+        clear: both;
+    }
+}
+.sub-navbar-inner:before,
+.sub-navbar-inner:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.sub-navbar-fixed-top {
+    position: fixed;
+    right: 0;
+    left: 0;
+    z-index: 1029;
+    margin-bottom: 0;
+}
+.sub-navbar .sub-nav > li > a:focus,
+.sub-navbar .sub-nav > li > a:hover {
+    color: @brand-primary;
+    text-decoration: none;
+    background-color: transparent;
+}
+.sub-navbar .sub-nav > .active > a,
+.sub-navbar .sub-nav > .active > a:hover,
+.sub-navbar .sub-nav > .active > a:focus {
+    color: @brand-primary;
+    text-decoration: none;
+    background-color: transparent;
+}

@@ -1,0 +1,253 @@
+.thumbnail.well {
+    padding: 19px !important;
+    border:  none;
+}
+
+.well {
+    .inset-panel-dark;
+    border: 0;
+    hr {
+        border: none;
+        height: 1px;
+    }
+    .well-title {
+        background:              @brand-primary;
+        color:                   #000000;
+        position:                relative;
+        top:                     -19px;
+        left:                    -19px;
+        right:                   -17px;
+        width:                   auto;
+        text-align:              center;
+        font-weight:             bold;
+        letter-spacing:          2px;
+        margin-right:            -38px;
+        display:                 block;
+        border-top-right-radius: 4px;
+        border-top-left-radius:  4px;
+        &.info {
+            background: @brand-info;
+        }
+        & .success {
+            background: @brand-success;
+        }
+        & .warning {
+            background: @brand-warning;
+        }
+        & .danger {
+            background: @brand-danger;
+        }
+    }
+    .well-title-bottom {
+        background:                 @brand-primary;
+        color:                      #000000;
+        position:                   relative;
+        bottom:                     -19px;
+        left:                       -19px;
+        right:                      -17px;
+        width:                      auto;
+        text-align:                 center;
+        font-weight:                bold;
+        letter-spacing:             2px;
+        margin-right:               -38px;
+        display:                    block;
+        height:                     20px;
+        border-bottom-right-radius: 4px;
+        border-bottom-left-radius:  4px;
+        &.info {
+            background: @brand-info;
+        }
+        & .success {
+            background: @brand-success;
+        }
+        & .warning {
+            background: @brand-warning;
+        }
+        & .danger {
+            background: @brand-danger;
+        }
+    }
+}
+
+.well-small {
+    .well-title {
+        background:     @brand-primary;
+        color:          #000000;
+        position:       relative;
+        top:            -7px;
+        left:           -7px;
+        right:          -7px;
+        width:          auto;
+        text-align:     center;
+        font-weight:    bold;
+        letter-spacing: 2px;
+        border-bottom:  2px solid #000000;
+        margin-right:   -14px;
+        display:        block;
+        .box-shadow(~"rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset");
+    }
+    .well-title-bottom {
+        background:     @brand-primary;
+        color:          #000000;
+        position:       relative;
+        bottom:         -8px;
+        left:           -7px;
+        right:          -7px;
+        width:          auto;
+        text-align:     center;
+        font-weight:    bold;
+        letter-spacing: 2px;
+        border-top:     2px solid #000000;
+        margin-right:   -14px;
+        display:        block;
+        height:         20px;
+        .box-shadow(~"rgba(255, 255, 255, 0.1) 0 1px 0, rgba(0, 0, 0, 0.8) 0 1px 7px 0px inset");
+    }
+}
+
+.darkwell {
+    .inset-panel-dark;
+    border: 0;
+}
+
+.well-title a,
+.well-title-bottom a {
+    color: #000000;
+}
+
+.well-btn {
+    background:     darken(@brand-primary, 10%);
+    color:          #000000;
+    text-align:     center;
+    font-weight:    bold;
+    letter-spacing: 2px;
+    padding:        0px 10px;
+    &:hover {
+        background: darken(@brand-primary, 5%);
+        &.info {
+            background: darken(@brand-info, 5%);
+        }
+        & .success {
+            background: darken(@brand-success, 5%);
+        }
+        & .warning {
+            background: darken(@brand-warning, 5%);
+        }
+        & .danger {
+            background: darken(@brand-danger, 5%);
+        }
+    }
+    & a {
+        color: #000000;
+    }
+    &.info {
+        background: darken(@brand-info, 10%);
+    }
+    & .success {
+        background: darken(@brand-success, 10%);
+    }
+    & .warning {
+        background: darken(@brand-warning, 10%);
+    }
+    & .danger {
+        background: darken(@brand-danger, 10%);
+    }
+}
+
+.well-btn-right {
+    position:                absolute;
+    right:                   0px;
+    bottom:                  0px;
+    border-top-right-radius: 4px;
+}
+
+.well-btn-left {
+    position:               absolute;
+    left:                   0px;
+    bottom:                 0px;
+    border-top-left-radius: 4px;
+}
+
+.box {
+    border-radius: 5px;
+    border:        1px solid #000000;
+    box-shadow:    rgba(255, 255, 255, .1) 0 1px 0, rgba(0, 0, 0, .8) 0 1px 7px 0px inset;
+}
+
+.box-primary {
+    background-color: @brand-primary;
+}
+
+.box-primary i {
+    color: @darkPrimary;
+}
+
+.box-success {
+    background-color: @brand-success;
+}
+
+.box-success i {
+    color: @darkSuccess;
+}
+
+.box-info {
+    background-color: @brand-info;
+}
+
+.box-info i {
+    color: @darkInfo;
+}
+
+.box-warning {
+    background-color: @brand-warning;
+}
+
+.box-warning i {
+    color: @darkWarning;
+}
+
+.box-danger {
+    background-color: @brand-danger;
+}
+
+.box-danger i {
+    color: @darkError;
+}
+
+.box-inverse {
+    background-color: @gray-dark;
+}
+
+.box-inverse i {
+    color: #000000;
+}
+
+.box-laravel {
+    background-color: @laravel;
+}
+
+.box-laravel i {
+    color: @darkLaravel;
+}
+
+.box i {
+    .opacity(.2);
+}
+
+.box .title {
+    .opacity(.7);
+}
+
+.box .bar {
+    text-align: center;
+    background: rgba(0, 0, 0, .2);
+}
+
+.box .bar:hover {
+    background: rgba(0, 0, 0, .6);
+}
+
+.box .bar a {
+    color:       #ffffff;
+    font-weight: bold;
+}

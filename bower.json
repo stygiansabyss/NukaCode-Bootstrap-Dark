@@ -1,0 +1,20 @@
+{
+  "name": "nukacode-bootstrap-dark",
+  "version": "0.1.0",
+  "description": "Dark theme for NukaCode sites",
+  "authors": [
+    "Stygian <stygian.warlock.v2@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.1"
+  }
+}

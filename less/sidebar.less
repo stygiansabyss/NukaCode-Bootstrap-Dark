@@ -1,0 +1,102 @@
+.sidebar {
+    position: fixed;
+    width: 220px;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: @brand-black;
+    z-index: 10;
+    > .nav {
+        padding-left: 0;
+        margin-bottom: 0;
+        list-style: none;
+        >li {
+            position: relative;
+            display: block;
+            &.special_link {
+                background-color: darken(@brand-teal, 10%);
+                > a {
+                    color: #000;
+                    &:hover {
+                        background-color: @brand-teal;
+                        color: darken(@brand-teal, 20%);
+                    }
+                }
+            }
+            &.nav-header {
+                padding: 20px;
+                color: #fff;
+                font-size: 14px;
+                background: #1a2229;
+            }
+            &.active {
+                >a {
+                    background: @brand-primary;
+                    &:hover {
+                        background: @brand-primary;
+                    }
+                }
+                >a {
+                    color: #fff;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+                > ul {
+                    > li {
+                        > a:hover {
+                            background: transparent !important;
+                        }
+                        &.active {
+                            i.fa.fa-circle-o {
+                                color: @brand-primary;
+                            }
+                        }
+                    }
+                }
+            }
+            >a {
+                padding: 8px 20px;
+                line-height: 20px;
+                color: #a8acb1;
+                &:hover {
+                    background: #232a2f;
+                }
+                & i {
+                    float: left;
+                    margin-right: 15px;
+                    width: 14px;
+                    text-align: center;
+                    line-height: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .nav-second-level, .nav-third-level {
+            list-style-type: none;
+            padding: 10px 0 10px 30px;
+            margin: 0;
+            background: #1a2229;
+            position: relative;
+            >li {
+                >a {
+                    padding: 5px 20px;
+                    display: block;
+                    font-weight: 300;
+                    color: #889097;
+                    text-decoration: none;
+                    position: relative;
+                    background: transparent;
+                    &:hover {
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.sidebar-content {
+    margin-left: 220px;
+    padding: 20px 25px;
+}

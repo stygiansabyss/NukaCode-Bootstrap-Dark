@@ -1,0 +1,31 @@
+.pagination li > a,
+.pagination li > span,
+.pager li > a,
+.pager li > span {
+    background:   transparent;
+    border-color: lighten(@gray, 10%);
+}
+
+.pagination li > a:hover,
+.pagination .active > a,
+.pagination .active > span,
+.pager li > a:hover,
+.pager .active > a,
+.pager .active > span {
+    background-color: @brand-primary !important;
+    color:            @brand-black;
+    border:           1px solid @brand-primary;
+}
+
+.pagination li.disabled,
+.pager li.disabled {
+    > a {
+        border-color:     lighten(@gray, 10%);
+        background-color: darken(@brand-primary, 20%);
+        color:            @gray;
+        &:hover {
+            background-color: darken(@brand-primary, 15%);
+            border-color:     lighten(@gray, 10%);
+        }
+    }
+}

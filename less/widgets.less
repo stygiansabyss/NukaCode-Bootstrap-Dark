@@ -1,0 +1,94 @@
+.widget {
+    border-radius: 3px;
+    margin-bottom: 20px;
+    color: #fff;
+    padding: 15px;
+    overflow: hidden;
+    &.widget-stats {
+        position: relative;
+    }
+}
+.widget-notification {
+    .info {
+        h4 {
+            font-size: 12px;
+            margin: 5px 0;
+            color: #fff;
+        }
+        p {
+            font-size: 24px;
+            font-weight: 300;
+            margin-bottom: 0;
+        }
+    }
+    .icon {
+        font-size: 42px;
+        height: 56px;
+        width: 56px;
+        text-align: center;
+        line-height: 56px;
+        margin-left: 15px;
+        color: #fff;
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        opacity: .2;
+        filter: alpha(opacity=20);
+        &.stats-icon-lg {
+            font-size: 52px;
+            top: 12px;
+            right: 21px;
+        }
+    }
+    .link {
+        a {
+            display: block;
+            margin: 15px -15px -15px;
+            padding: 7px 15px;
+            background: rgba(0, 0, 0, .4);
+            text-align: right;
+            color: #ddd;
+            font-weight: 300;
+            text-decoration: none;
+        }
+    }
+    .title {
+        position: relative;
+        line-height: 1.1;
+        font-size: 12px;
+        margin: 2px 0 7px;
+    }
+    .desc {
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+    .focus {
+        font-size: 24px;
+        font-weight: 300;
+        margin-bottom: 10px;
+    }
+    .bar {
+        background: rgba(0, 0, 0, .2);
+        height: 2px;
+        margin: 0 -15px 12px;
+        background: rgba(255, 255, 255, .5);
+    }
+    .bar-inverse {
+        background: rgba(0, 0, 0, .2);
+        height: 2px;
+        margin: 0 -15px 12px;
+        background: rgba(0, 0, 0, .5);
+    }
+}
+.widget-notification .link a:focus, .widget-notification .link a:hover {
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+}
+.widget-notification .desc, .widget-notification .title {
+    color: #fff;
+    color: rgba(255, 255, 255, .6);
+    a {
+        color: #fff;
+        color: rgba(255, 255, 255, .6);
+    }
+}

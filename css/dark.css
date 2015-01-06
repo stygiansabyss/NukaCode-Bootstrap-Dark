@@ -1,3 +1,50 @@
+.well {
+  -webkit-box-shadow: rgba(255,255,255, .1) 0 1px 0, rgba(0,0,0, .8) 0 1px 7px 0px inset;
+  -moz-box-shadow: rgba(255,255,255, .1) 0 1px 0, rgba(0,0,0, .8) 0 1px 7px 0px inset;
+  box-shadow: rgba(255,255,255, .1) 0 1px 0, rgba(0,0,0, .8) 0 1px 7px 0px inset;
+  background: #202020;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0;
+}
+.darkwell {
+  -webkit-box-shadow: rgba(255,255,255, .1) 0 1px 0, rgba(0,0,0, .8) 0 1px 7px 0px inset;
+  -moz-box-shadow: rgba(255,255,255, .1) 0 1px 0, rgba(0,0,0, .8) 0 1px 7px 0px inset;
+  box-shadow: rgba(255,255,255, .1) 0 1px 0, rgba(0,0,0, .8) 0 1px 7px 0px inset;
+  background: #202020;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 0;
+}
+.inset-panel-dark {
+  -webkit-box-shadow: rgba(255,255,255, .1) 0 1px 0, rgba(0,0,0, .8) 0 1px 7px 0px inset;
+  -moz-box-shadow: rgba(255,255,255, .1) 0 1px 0, rgba(0,0,0, .8) 0 1px 7px 0px inset;
+  box-shadow: rgba(255,255,255, .1) 0 1px 0, rgba(0,0,0, .8) 0 1px 7px 0px inset;
+  background: #202020;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.horizontal-rule-dark {
+  -webkit-box-shadow: rgba(255, 255, 255, 0.07) 0 1px 0;
+  -moz-box-shadow: rgba(255, 255, 255, 0.07) 0 1px 0;
+  box-shadow: rgba(255, 255, 255, 0.07) 0 1px 0;
+  border-bottom: 1px solid #121212;
+}
+.horizontal-rule-top-dark {
+  -webkit-box-shadow: rgba(255, 255, 255, 0.07) 0 1px 0 inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.07) 0 1px 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.07) 0 1px 0 inset;
+  border-top: 1px solid #121212;
+}
+.vertical-rule-dark {
+  -webkit-box-shadow: rgba(255, 255, 255, 0.07) 1px 0 0;
+  -moz-box-shadow: rgba(255, 255, 255, 0.07) 1px 0 0;
+  box-shadow: rgba(255, 255, 255, 0.07) 1px 0 0;
+  border-right: 1px solid #121212;
+}
+.vertical-rule-left-dark {
+  -webkit-box-shadow: rgba(255, 255, 255, 0.07) 1px 0 0 inset;
+  -moz-box-shadow: rgba(255, 255, 255, 0.07) 1px 0 0 inset;
+  box-shadow: rgba(255, 255, 255, 0.07) 1px 0 0 inset;
+  border-left: 1px solid #121212;
+}
 /*! normalize.css v3.0.2 | MIT License | git.io/normalize */
 html {
   font-family: sans-serif;
@@ -4956,7 +5003,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .active > a:hover,
 .navbar-default .navbar-nav > .active > a:focus {
   color: #ffffff;
-  background-color: #cad1d4;
+  background-color: #bcd7e2, 30%;
 }
 .navbar-default .navbar-nav > .disabled > a,
 .navbar-default .navbar-nav > .disabled > a:hover,
@@ -4981,7 +5028,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-default .navbar-nav > .open > a,
 .navbar-default .navbar-nav > .open > a:hover,
 .navbar-default .navbar-nav > .open > a:focus {
-  background-color: #cad1d4;
+  background-color: #bcd7e2, 30%;
   color: #ffffff;
 }
 @media (max-width: 767px) {
@@ -4997,7 +5044,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:hover,
   .navbar-default .navbar-nav .open .dropdown-menu > .active > a:focus {
     color: #ffffff;
-    background-color: #cad1d4;
+    background-color: #bcd7e2, 30%;
   }
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a,
   .navbar-default .navbar-nav .open .dropdown-menu > .disabled > a:hover,
@@ -5155,7 +5202,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .navbar-inverse .nav > li > a:hover {
   color: #5097b5;
   margin-bottom: -3px;
-  border-bottom: 3px solid #5097b5;
+  border-bottom: 3px solid #5097b5 !important;
 }
 .navbar .nav > li.active > a,
 .navbar-inverse .nav > li.active > a,
@@ -5182,6 +5229,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   background-image: -ms-linear-gradient(top, #5097b5 0, #74acc4 100) !important;
   background-image: -o-linear-gradient(top, #5097b5 0, #74acc4 100) !important;
   background-image: linear-gradient(top, #5097b5 0, #74acc4 100) !important;
+  color: #2d353c !important;
 }
 .nav li + .nav-header {
   margin-top: 0;
@@ -5229,7 +5277,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 }
 .dropdown-menu > .active > a {
   color: #ffffff;
-  background-color: #cad1d4;
+  background-color: #bcd7e2, 30%;
 }
 .sub-nav {
   margin-bottom: 10px;
@@ -6529,6 +6577,7 @@ div:not(.panel) > .list-group {
 .panel > .panel-alert.panel-alert-info:before {
   font: normal normal normal 2em FontAwesome;
   content: "\f05a";
+  margin-right: 5px;
 }
 .panel > .panel-alert.panel-alert-warning {
   background-color: #efbb82;
@@ -6539,6 +6588,7 @@ div:not(.panel) > .list-group {
 .panel > .panel-alert.panel-alert-warning:before {
   font: normal normal normal 2em FontAwesome;
   content: "\f071";
+  margin-right: 5px;
 }
 .panel > .panel-alert.panel-alert-success {
   background-color: #ace0ac;
@@ -6549,6 +6599,7 @@ div:not(.panel) > .list-group {
 .panel > .panel-alert.panel-alert-success:before {
   font: normal normal normal 2em FontAwesome;
   content: "\f00c";
+  margin-right: 5px;
 }
 .panel > .panel-alert.panel-alert-danger {
   background-color: #d88783;
@@ -6559,6 +6610,7 @@ div:not(.panel) > .list-group {
 .panel > .panel-alert.panel-alert-danger:before {
   font: normal normal normal 2em FontAwesome;
   content: "\f057";
+  margin-right: 5px;
 }
 .panel-body {
   padding: 15px;
@@ -6566,10 +6618,10 @@ div:not(.panel) > .list-group {
 .panel-btn {
   float: right;
   display: inline-block;
-  height: 39px;
+  height: 37px;
   position: relative;
-  top: -11px;
-  right: -15.5px;
+  top: -10px;
+  right: -14.5px;
   width: auto;
   color: #000000;
   margin-bottom: -30px;

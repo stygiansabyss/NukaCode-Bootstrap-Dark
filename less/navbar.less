@@ -19,7 +19,7 @@
             & > a:hover {
                 color: @brand-primary;
                 margin-bottom: -3px;
-                border-bottom: 3px solid @brand-primary;
+                border-bottom: 3px solid @brand-primary !important;
             }
             &.active {
                 & > a, > a:hover {
@@ -45,6 +45,7 @@
         }
         & > a {
             .linear-gradient-top(@brand-primary, @brand-primary, 0, lighten(@brand-primary, 10%), 100) !important;
+            color: @brand-black !important;
         }
     }
     li {

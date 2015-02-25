@@ -937,7 +937,7 @@ body {
   font-size: 12px;
   line-height: 1.42857143;
   color: #c6c6c6;
-  background-color: #343838;
+  background-color: #ffffff;
 }
 input,
 button,
@@ -982,7 +982,7 @@ img {
 .img-thumbnail {
   padding: 4px;
   line-height: 1.42857143;
-  background-color: #343838;
+  background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: all 0.2s ease-in-out;
@@ -1032,7 +1032,6 @@ hr {
   border-top: none;
 }
 #header {
-  margin: 0px 5%;
   max-height: 60px;
 }
 #content {
@@ -2239,7 +2238,7 @@ th {
   border-top: 2px solid #343838;
 }
 .table .table {
-  background-color: #343838;
+  background-color: #ffffff;
 }
 .table-condensed > thead > tr > th,
 .table-condensed > tbody > tr > th,
@@ -4329,7 +4328,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-tabs > li.active > a:hover,
 .nav-tabs > li.active > a:focus {
   color: #343838;
-  background-color: #343838;
+  background-color: #ffffff;
   border: 1px solid #dddddd;
   border-bottom-color: transparent;
   cursor: default;
@@ -4375,7 +4374,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs.nav-justified > .active > a,
   .nav-tabs.nav-justified > .active > a:hover,
   .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #343838;
+    border-bottom-color: #ffffff;
   }
 }
 .nav-pills > li {
@@ -4443,7 +4442,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   .nav-tabs-justified > .active > a,
   .nav-tabs-justified > .active > a:hover,
   .nav-tabs-justified > .active > a:focus {
-    border-bottom-color: #343838;
+    border-bottom-color: #ffffff;
   }
 }
 .tab-content > .tab-pane {
@@ -5779,7 +5778,7 @@ a.badge:focus {
   padding: 4px;
   margin-bottom: 17px;
   line-height: 1.42857143;
-  background-color: #343838;
+  background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 4px;
   -webkit-transition: border 0.2s ease-in-out;
